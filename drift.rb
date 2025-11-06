@@ -5,21 +5,21 @@
 class Drift < Formula
   desc "A command-line tool to detect and prevent drift between your code and your documentation."
   homepage "https://github.com/driftee-ai/drift"
-  version "0.1.34"
+  version "0.1.35"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/driftee-ai/drift/releases/download/v0.1.34/drift_0.1.34_Darwin_x86_64.tar.gz"
-      sha256 "9777f48ac386c0d9fffe8307895a0b2ad009a6da31eddeb8d73e6041ae4fb03e"
+      url "https://github.com/driftee-ai/drift/releases/download/v0.1.35/drift_0.1.35_Darwin_x86_64.tar.gz"
+      sha256 "1ae7d296bfc193389f0b496269426575b884c856be6f591cb9890602235adf15"
 
       def install
         bin.install "drift"
       end
     end
     on_arm do
-      url "https://github.com/driftee-ai/drift/releases/download/v0.1.34/drift_0.1.34_Darwin_arm64.tar.gz"
-      sha256 "ed90d8599204af2d7e5a85b885bb3819940d80840512c1922ac08315c9780162"
+      url "https://github.com/driftee-ai/drift/releases/download/v0.1.35/drift_0.1.35_Darwin_arm64.tar.gz"
+      sha256 "614fe6e608597eac91c2e4781d400c2b1a8024098c08decba08c99b2d07a3245"
 
       def install
         bin.install "drift"
@@ -30,8 +30,8 @@ class Drift < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/driftee-ai/drift/releases/download/v0.1.34/drift_0.1.34_Linux_x86_64.tar.gz"
-        sha256 "79f0835124d0e64278243cc3cf0e37ee220149500dca8253b6a5f6d3f9d8d96a"
+        url "https://github.com/driftee-ai/drift/releases/download/v0.1.35/drift_0.1.35_Linux_x86_64.tar.gz"
+        sha256 "1961524052bbbf82366dbf1e1c619659cdc81bb6741af0cbe067cdb8ff637acb"
 
         def install
           bin.install "drift"
@@ -40,8 +40,8 @@ class Drift < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/driftee-ai/drift/releases/download/v0.1.34/drift_0.1.34_Linux_arm64.tar.gz"
-        sha256 "28f983a8133c2717baab405110cc1ae72c59cb42ed8ffa9a5beb2f5347263737"
+        url "https://github.com/driftee-ai/drift/releases/download/v0.1.35/drift_0.1.35_Linux_arm64.tar.gz"
+        sha256 "80b64511b0d614ca3ce51443d51439d19be60508d5a35323a7fc63301985c1f6"
 
         def install
           bin.install "drift"
